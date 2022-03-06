@@ -29,3 +29,7 @@ jobs:
                 BRANCH: master
                 FOLDER: dist
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Install backend
+              run: |
+                npm install json-server
+                npm run backend
